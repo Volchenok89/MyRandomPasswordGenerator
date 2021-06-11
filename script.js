@@ -25,8 +25,22 @@ function generatePassword(){
   var upperCases = confirm("Add upper cases?");
   var special = confirm("Add special characters?");
 
-var minimumCount = 0;
+
+// Minimums
+
+  var minimumCount = 0;
+
+  var minimumNumbers = "";
+  var minimumLowerCases = "";
+  var minimumUpperCases = "";
+  var minimumSpecialCharacters = "";
 }
+
+// The functions
+
+
+
+
 
 
 
