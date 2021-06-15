@@ -2,9 +2,32 @@
 // Assignment code here
 
 const specialCharacters = "~!@#$%^&*()_-=+{}[]|\:<?/>.,";
-const generateBtn = document.getElementById('generateBtn')
-generateBtn.addEventListener("click", writePassword);
+const generateBtn = document.getElementById('generate')
 
+
+
+
+// When clicking button
+
+function generatePassword(){
+  var passwordLength = prompt("How many characters do you want? (Must-be between 8 and 128.");
+
+  var numbers = confirm("Add numbers?");
+  var lowerCases = confirm("Add lower cases?");
+  var upperCases = confirm("Add upper cases?");
+  var special = confirm("Add special characters?");
+
+  console.log("length: "+passwordLength);
+   
+
+  // If not correct lenght, run the code again
+
+    if(passwordLength>=8 && passwordLength<=128){
+        return;
+    } else {
+        promptLength();
+    }
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -14,17 +37,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
-// When clicking button
-
-function generatePassword(){
-  var passwordLength = prompt("How many characters you want for the password? It must be between 8 and 128 characters.");
-
-  var numbers = confirm("Add numbers?");
-  var lowerCases = confirm("Add lower cases?");
-  var upperCases = confirm("Add upper cases?");
-  var special = confirm("Add special characters?");
-
+generateBtn.addEventListener("click", writePassword);
 
 // Minimums
 
@@ -34,7 +47,7 @@ function generatePassword(){
   var minimumLowerCases = "";
   var minimumUpperCases = "";
   var minimumSpecialCharacters = "";
-}
+
 
 // The functions
 
@@ -42,10 +55,8 @@ function generatePassword(){
 
 
 
-
-
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+
 
 
 
