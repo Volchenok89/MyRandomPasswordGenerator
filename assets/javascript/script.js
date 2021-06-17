@@ -58,4 +58,20 @@ function generatePassword() {
   }
 
 
+  // For the loops and password generator.
+
+
+  for (let i = 0; i < totalCharacters; i++) {
+    let posibleCharacters = random(passwordArray);
+
+    resultPassword.push(posibleCharacters);
+    
+  }
+  for (let i = 0; i < theCharacters.length; i++) {
+    resultPassword[i] = theCharacters[i];
+
+  }
  
+  return resultPassword.join("");
+}
+
