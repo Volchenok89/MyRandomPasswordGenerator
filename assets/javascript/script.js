@@ -75,3 +75,16 @@ function generatePassword() {
   return resultPassword.join("");
 }
 
+
+
+// Write password to imput
+function writePassword() {
+    let password = generatePassword();
+    let passwordText = document.querySelector("#password");
+  
+    passwordText.value = password;
+  
+  }
+  
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
