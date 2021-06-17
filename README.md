@@ -17,7 +17,7 @@ You can choose from a combination of regular and capitalized letters, numbers an
 
 ## Website
 
-https://volchenok89.github.io/MyOwnPasswordGenerator/
+https://volchenok89.github.io/MyRandomPasswordGenerator/
 
 
 ##Contribution
