@@ -12,3 +12,24 @@ function random(array) {
 
 }
 
+// Function for the password
+function generatePassword() {
+    let passwordArray = [];
+    let resultPassword = [];
+    let theCharacters = [];
+  
+    let totalCharacters = prompt(" How many characters would you like your password to have? ");
+  
+    if (totalCharacters < 8 || totalCharacters > 128) {
+      alert("Must have minimum 8 characters and a maximum of 128 characters!.");
+      return;
+    }
+  
+  
+    if (confirm("Do you want your password to contain upper cases?")) {
+      Array.prototype.push.apply(passwordArray, upperCase);
+      theCharacters.push(random(upperCase));
+     
+    }
+  
+  
