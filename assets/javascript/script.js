@@ -33,3 +33,29 @@ function generatePassword() {
     }
   
   
+  if (confirm("Lower cases?")) {
+    Array.prototype.push.apply(passwordArray, lowerCase);
+    theCharacters.push(random(lowerCase));
+   
+  }
+
+
+  if (confirm("Numbers?")) {
+    Array.prototype.push.apply(passwordArray, numbers);
+    theCharacters.push(random(numbers));
+ 
+  }
+
+  if (confirm("Special characters?")) {
+    Array.prototype.push.apply(passwordArray, special);
+    theCharacters.push(random(special));
+
+
+  }
+
+  if (passwordArray.length === 0) {
+    alert("Please select at least one type of characters!");
+  }
+
+
+ 
